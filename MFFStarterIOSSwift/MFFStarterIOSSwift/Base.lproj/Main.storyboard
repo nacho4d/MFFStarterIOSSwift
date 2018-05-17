@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2oD-bN-9GQ">
-                                <rect key="frame" x="16" y="215.5" width="343" height="237.5"/>
+                                <rect key="frame" x="16" y="195.5" width="343" height="139.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -34,36 +34,90 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyU-SN-02N">
-                                <rect key="frame" x="87.5" y="517" width="200" height="50"/>
+                                <rect key="frame" x="87.5" y="357" width="200" height="50"/>
                                 <color key="backgroundColor" red="0.1516897529" green="0.28559413550000001" blue="0.4261436462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="RXU-Sx-vId"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="mvm-rO-KSx"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                <state key="normal" title="Ping MobileFirst Server">
+                                <state key="normal" title="1. Ping MobileFirst Server">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="getAccessTokenWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5bG-K0-W3f"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g0I-tP-TT8">
+                                <rect key="frame" x="88" y="417" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.1516897529" green="0.28559413550000001" blue="0.4261436462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="L5I-mR-JHm"/>
+                                    <constraint firstAttribute="height" constant="50" id="owu-tG-l25"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="2. Get User Display Name">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserDisplayNameWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5MD-gT-yil"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g4w-5J-VzV">
+                                <rect key="frame" x="88" y="537" width="200" height="50"/>
+                                <color key="backgroundColor" red="0.1516897529" green="0.28559413550000001" blue="0.4261436462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="0JN-lK-bbf"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="QKF-Zz-o6O"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="4. Logout">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cYm-la-nBg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqo-Kd-rdQ">
+                                <rect key="frame" x="40" y="477" width="295" height="50"/>
+                                <color key="backgroundColor" red="0.1516897529" green="0.28559413550000001" blue="0.4261436462" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="4g8-Vy-fxb"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="200" id="5bV-Nr-LSo"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <state key="normal" title="3. Get User Display Name via Delegate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="getUserDisplayNameViaBinaryDelegateWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="j2i-NH-02c"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="2oD-bN-9GQ" firstAttribute="top" secondItem="mZd-Om-zh8" secondAttribute="bottom" constant="64" id="6Jj-s1-Oze"/>
+                            <constraint firstItem="g4w-5J-VzV" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="1cp-Fw-sIo"/>
+                            <constraint firstItem="fqo-Kd-rdQ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="3hN-fz-yrC"/>
+                            <constraint firstItem="2oD-bN-9GQ" firstAttribute="top" secondItem="mZd-Om-zh8" secondAttribute="bottom" constant="44" id="6Jj-s1-Oze"/>
                             <constraint firstItem="2oD-bN-9GQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="C2n-Qp-D3k"/>
-                            <constraint firstItem="UyU-SN-02N" firstAttribute="top" secondItem="2oD-bN-9GQ" secondAttribute="bottom" constant="64" id="CBq-3m-9Q0"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="UyU-SN-02N" secondAttribute="bottom" constant="100" id="GGc-2P-SiG"/>
+                            <constraint firstItem="UyU-SN-02N" firstAttribute="top" secondItem="2oD-bN-9GQ" secondAttribute="bottom" constant="22" id="CBq-3m-9Q0"/>
+                            <constraint firstItem="g4w-5J-VzV" firstAttribute="top" secondItem="fqo-Kd-rdQ" secondAttribute="bottom" constant="10" id="Clr-qc-aN4"/>
                             <constraint firstItem="UyU-SN-02N" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="K8b-fh-VAC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2oD-bN-9GQ" secondAttribute="trailing" constant="16" id="SFK-VJ-PvK"/>
+                            <constraint firstItem="fqo-Kd-rdQ" firstAttribute="top" secondItem="g0I-tP-TT8" secondAttribute="bottom" constant="10" id="Yoe-jf-tTf"/>
+                            <constraint firstItem="g0I-tP-TT8" firstAttribute="top" secondItem="UyU-SN-02N" secondAttribute="bottom" constant="10" id="ZYO-72-AhU"/>
+                            <constraint firstItem="g0I-tP-TT8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="dXZ-o0-AH5"/>
                             <constraint firstItem="mZd-Om-zh8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rVe-uh-hGD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g4w-5J-VzV" secondAttribute="bottom" constant="80" id="yuP-Ty-fhu"/>
                             <constraint firstItem="mZd-Om-zh8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="zuz-Np-sfK"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="connectionStatusLabel" destination="2oD-bN-9GQ" id="3sb-IE-wl6"/>
+                        <outlet property="getUserDisplayBinaryDelegateButton" destination="fqo-Kd-rdQ" id="aLU-FL-LQT"/>
+                        <outlet property="getUserDisplayButton" destination="g0I-tP-TT8" id="24O-Ka-MX2"/>
+                        <outlet property="logoutButton" destination="g4w-5J-VzV" id="oP3-q8-qiz"/>
                         <outlet property="testServerButton" destination="UyU-SN-02N" id="98Q-km-d6O"/>
                         <outlet property="titleLabel" destination="mZd-Om-zh8" id="cG7-nq-5UQ"/>
                     </connections>

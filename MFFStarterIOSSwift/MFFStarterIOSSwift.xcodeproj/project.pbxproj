@@ -7,16 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4FBC642A20AC1DC80096B8CE /* MFFChallengeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC642820AC1DC80096B8CE /* MFFChallengeHandler.swift */; };
+		4FBC642B20AC1DC80096B8CE /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FBC642920AC1DC80096B8CE /* mfpclient.plist */; };
+		4FBC642D20AD19B80096B8CE /* MFFBinaryDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FBC642C20AD19B80096B8CE /* MFFBinaryDelegate.swift */; };
 		4FFAC5ED20ABF0A300B0F8B6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFAC5EC20ABF0A300B0F8B6 /* AppDelegate.swift */; };
 		4FFAC5EF20ABF0A300B0F8B6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FFAC5EE20ABF0A300B0F8B6 /* ViewController.swift */; };
 		4FFAC5F220ABF0A300B0F8B6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFAC5F020ABF0A300B0F8B6 /* Main.storyboard */; };
 		4FFAC5F420ABF0A400B0F8B6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FFAC5F320ABF0A400B0F8B6 /* Assets.xcassets */; };
 		4FFAC5F720ABF0A400B0F8B6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FFAC5F520ABF0A400B0F8B6 /* LaunchScreen.storyboard */; };
-		4FFAC5FF20AC03E400B0F8B6 /* mfpclient.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4FFAC5FE20AC03E400B0F8B6 /* mfpclient.plist */; };
 		E3C28A8058D39AD5C77DB77E /* Pods_MFFStarterIOSSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D5528ADB3E7011C3A66DEAC /* Pods_MFFStarterIOSSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4FBC642820AC1DC80096B8CE /* MFFChallengeHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MFFChallengeHandler.swift; sourceTree = "<group>"; };
+		4FBC642920AC1DC80096B8CE /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
+		4FBC642C20AD19B80096B8CE /* MFFBinaryDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MFFBinaryDelegate.swift; sourceTree = "<group>"; };
 		4FFAC5E920ABF0A300B0F8B6 /* MFFStarterIOSSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MFFStarterIOSSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4FFAC5EC20ABF0A300B0F8B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4FFAC5EE20ABF0A300B0F8B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,7 +29,6 @@
 		4FFAC5F320ABF0A400B0F8B6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4FFAC5F620ABF0A400B0F8B6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4FFAC5F820ABF0A400B0F8B6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4FFAC5FE20AC03E400B0F8B6 /* mfpclient.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = mfpclient.plist; sourceTree = "<group>"; };
 		9D5528ADB3E7011C3A66DEAC /* Pods_MFFStarterIOSSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MFFStarterIOSSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1BBE9E8AB6AC0D494FDB7B7 /* Pods-MFFStarterIOSSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFStarterIOSSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFFStarterIOSSwift/Pods-MFFStarterIOSSwift.release.xcconfig"; sourceTree = "<group>"; };
 		DC13FED7499247B08C607B7A /* Pods-MFFStarterIOSSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFFStarterIOSSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MFFStarterIOSSwift/Pods-MFFStarterIOSSwift.debug.xcconfig"; sourceTree = "<group>"; };
@@ -59,6 +63,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		4FBC642720AC1DC80096B8CE /* MFFStuff */ = {
+			isa = PBXGroup;
+			children = (
+				4FBC642C20AD19B80096B8CE /* MFFBinaryDelegate.swift */,
+				4FBC642820AC1DC80096B8CE /* MFFChallengeHandler.swift */,
+				4FBC642920AC1DC80096B8CE /* mfpclient.plist */,
+			);
+			path = MFFStuff;
+			sourceTree = "<group>";
+		};
 		4FFAC5E020ABF0A300B0F8B6 = {
 			isa = PBXGroup;
 			children = (
@@ -80,7 +94,7 @@
 		4FFAC5EB20ABF0A300B0F8B6 /* MFFStarterIOSSwift */ = {
 			isa = PBXGroup;
 			children = (
-				4FFAC5FE20AC03E400B0F8B6 /* mfpclient.plist */,
+				4FBC642720AC1DC80096B8CE /* MFFStuff */,
 				4FFAC5EC20ABF0A300B0F8B6 /* AppDelegate.swift */,
 				4FFAC5EE20ABF0A300B0F8B6 /* ViewController.swift */,
 				4FFAC5F020ABF0A300B0F8B6 /* Main.storyboard */,
@@ -155,7 +169,7 @@
 				4FFAC5F720ABF0A400B0F8B6 /* LaunchScreen.storyboard in Resources */,
 				4FFAC5F420ABF0A400B0F8B6 /* Assets.xcassets in Resources */,
 				4FFAC5F220ABF0A300B0F8B6 /* Main.storyboard in Resources */,
-				4FFAC5FF20AC03E400B0F8B6 /* mfpclient.plist in Resources */,
+				4FBC642B20AC1DC80096B8CE /* mfpclient.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +238,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FFAC5EF20ABF0A300B0F8B6 /* ViewController.swift in Sources */,
+				4FBC642A20AC1DC80096B8CE /* MFFChallengeHandler.swift in Sources */,
 				4FFAC5ED20ABF0A300B0F8B6 /* AppDelegate.swift in Sources */,
+				4FBC642D20AD19B80096B8CE /* MFFBinaryDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
